@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+
+html, body, #root { height: 100%; }
+
+body {
+  @apply bg-canvas text-ink font-body antialiased;
+}
+
+h1, h2, h3, h4 { @apply font-display; }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #D8DCE3; border-radius: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+.focus-ring {
+  @apply outline-none ring-2 ring-navy/30 ring-offset-1;
+}
